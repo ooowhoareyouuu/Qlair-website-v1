@@ -1,0 +1,18 @@
+html, body, body * {
+  cursor: none !important;
+}
+
+#qlair-cursor {
+  position: fixed;
+  z-index: 9999;
+  width: 22px;
+  height: 22px;
+  pointer-events: none;
+  background: url('assets/qlair-cursor.svg') center / contain no-repeat;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 3px rgba(196, 244, 80, .42));
+  opacity: 0;
+  transition: opacity .12s ease;
+}
+
+body.has-custom-cursor #qlair-cursor { opacity: 1; }
