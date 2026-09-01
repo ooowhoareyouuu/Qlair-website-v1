@@ -1,0 +1,30 @@
+.guarantee {
+  padding: 82px 0 0;
+}
+
+.guarantee p {
+  max-width: 1020px;
+  margin: 0 auto;
+  color: var(--acid);
+  font-size: clamp(23px, 2.55vw, 38px);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.05em;
+  text-align: center;
+}
+
+.guarantee strong {
+  display: block;
+  margin: 0 0 15px;
+  font-family: 'DM Mono', monospace;
+  font-size: .31em;
+  letter-spacing: .08em;
+}
+
+.services { padding-top: 145px; }
+
+@media (max-width: 760px) {
+  .guarantee { padding-top: 60px; }
+  .guarantee p { font-size: 24px; }
+  .services { padding-top: 105px; }
+}
